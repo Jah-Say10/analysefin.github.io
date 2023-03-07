@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+	<title>Analyse financiere</title>
+</head>
+
+<style>
+
+	nav
+	{
+		background: #333;
+		height: 80px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	nav a
+	{	
+		color: #eee;	
+	}
+	
+	main
+	{
+		width: 80%;
+		margin: auto;
+	}
+	
+	table
+	{
+		width: 100%;
+	}
+	
+	table tr:nth-child(odd)
+	{
+		background: #ddd;	
+		height: 30px;
+	}
+	
+	table tr:nth-child(even)
+	{
+		background: #eee;
+		height: 30px;
+	}
+	
+	footer
+	{
+		background: #555;
+		color: #eee;
+		padding: 20px 20px;
+		box-sizing: border-box;
+		margin-top: 20px;
+	}
+
+</style>
+
+<body>
+	
+	<nav>
+		<a href="index.html">Accueil</a>
+		<a href="bilan.html">Bilan</a>
+		<a href="compteResultat.html">Compte de resultat</a>
+		<a href="about.html">A propos</a>
+		<a href="connection.html"> <button> Se deconnecter </button> </a> <br/>
+	</nav>
+	
+	<main>
+		<h1>Le compte de resultat</h1>
+		<table border="1">
+			<tr> <td> </td> <td>2020</td> <td>2021</td> <td>2022</td> </tr>
+			<tr> <td>Chiffres d'affaire</td> <td> <input type="number" value="3096" /> </td> <td> <input type="number" value="3821" /> </td> <td> <input type="number" value="4482" /> </td> </tr>
+			<tr> <td>Total charge</td> <td> <input type="number" value="3085" /> </td> <td> <input type="number" value="3916" /> </td> <td> <input type="number" value="4549" /> </td> </tr>
+			<tr> <td>Total produit</td> <td> <input type="number" value="2941" /> </td> <td> <input type="number" value="3707" /> </td> <td> <input type="number" value="4316" /> </td> </tr>
+			<tr> <td>Valeur ajoutee</td> <td> <input type="number" value="1432" /> </td> <td> <input type="number" value="2093" /> </td> <td> <input type="number" value="2328" /> </td> </tr>
+			<tr> <td>Resultat d'exploitation</td> <td> <input type="number" value="760" /> </td> <td> <input type="number" value="1105" /> </td> <td> <input type="number" value="1224" /> </td> </tr>
+			<tr> <td>Resultat financier</td> <td> <input type="number" value="-870" /> </td> <td> <input type="number" value="-969" /> </td> <td> <input type="number" value="-195" /> </td> </tr>
+			<tr> <td>Resultat exceptionnel</td> <td> <input type="number" value="-40" /> </td> <td> <input type="number" value="-100" /> </td> <td> <input type="number" value="-24" /> </td> </tr>
+			<tr> <td>Resultat net</td> <td> <input type="number" value="415" /> </td> <td> <input type="number" value="634" /> </td> <td> <input type="number" value="582" /> </td> </tr>
+			<tr> <td colspan="4"> <a href="index.html"> <button> Valider </button> </a> </td> </tr>
+		</table>
+	</main>
+	
+	<footer>
+		<p>Copyright Miage 2023</p>	
+	</footer>
+	
+</body>
+</html>
